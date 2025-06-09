@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Jun  8 20:29:23 2025
+Invocation: foremost -i nothinginterestinghere.001 -o outputdir 
+Output directory: /home/kali/Downloads/us_open_ctf/drivediscovery/outputdir
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: nothinginterestinghere.001
+Start: Sun Jun  8 20:29:23 2025
+Length: 10 MB (10485760 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00001248.jpg 	      27 KB 	     638976 	 
+1:	00001304.png 	      35 KB 	     667648 	  (1521 x 801)
+Finish: Sun Jun  8 20:29:23 2025
+
+2 FILES EXTRACTED
+	
+jpg:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sun Jun  8 20:29:23 2025
