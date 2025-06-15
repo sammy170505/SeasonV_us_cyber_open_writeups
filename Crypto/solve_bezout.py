@@ -41,4 +41,4 @@ for idx, d in enumerate(gcds):
         print(f"No printable candidates for position {idx} (d={d})")
         flag += '?'
 
-print("Flag so far:", flag)
+print("Flag:", flag)
