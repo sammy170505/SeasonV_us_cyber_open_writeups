@@ -1,4 +1,5 @@
-from Crypto.Util.number import *
+from Crypto.Util.number import * # type: ignore
+
 import base64
 
 # Given values
@@ -14,11 +15,12 @@ q = 333679396508538352589365351078683227609
 phi = (p - 1) * (q - 1)
 
 # Compute private key d
-d = inverse(e, phi)
+d = inverse(e, phi) # type: ignore
 
 # Decrypt the ciphertext
 m = pow(c, d, n)
-plaintext = long_to_bytes(m)
+plaintext = long_to_bytes(m) # type: ignore
+
 
 # Print raw decrypted message
 print("Decrypted message:", plaintext)
