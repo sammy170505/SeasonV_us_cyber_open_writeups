@@ -13,3 +13,9 @@ Disallow: /admin
 
 # The robot vaccuum arrives at a locked door, which naturally he'll want to get inside
 # Crumb 2: jB0SDNSX2MwMG
+
+go to  https://fydqlgcm.web.ctf.uscybergames.com/admin
+
+look for static javascript:
+const ADMIN_USER = 'admin';
+const CRUMB_3 = 'sxM19mT3JfZEF';
