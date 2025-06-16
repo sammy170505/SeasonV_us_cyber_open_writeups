@@ -3,3 +3,13 @@
 
 After inspecting the contents, he'll hop on the ROBOT vaccuum picking up the crumbs he made.
 Crumb 1: dV9CQGszZF9hT   
+
+Got to: https://fydqlgcm.web.ctf.uscybergames.com/robots.txt
+
+result:
+
+User-agent: *
+Disallow: /admin
+
+# The robot vaccuum arrives at a locked door, which naturally he'll want to get inside
+# Crumb 2: jB0SDNSX2MwMG
