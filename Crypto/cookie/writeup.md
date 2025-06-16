@@ -19,3 +19,9 @@ go to  https://fydqlgcm.web.ctf.uscybergames.com/admin
 look for static javascript:
 const ADMIN_USER = 'admin';
 const CRUMB_3 = 'sxM19mT3JfZEF';
+
+go to: https://fydqlgcm.web.ctf.uscybergames.com/kitchen/README.txt
+
+Breaking into the door will make him thirsty, he'll want to find a glass of MILK.
+
+Crumb 3? Try the password on the door.
