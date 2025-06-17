@@ -8,5 +8,4 @@
 
 ## Challenge
 
-We were given a 64-bit ELF binary named `ctf_cafe`, which when executed presented a restaurant-themed menu interface:
-
+We were given a 64-bit ELF binary named `ctf_cafe`, which when executed presented a restaurant-themed menu interface
