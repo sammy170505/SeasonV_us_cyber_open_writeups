@@ -56,8 +56,8 @@ This pointed toward an XOR-based obfuscation hiding the flag.
 
 5. **Recovered the Flag:**
    - Successfully decrypted the flag:
-     ```
-     SVBGR{d3c0mp1l3rs_m4k3_l1f3_34sy}
+     ```bash
+     SVBGR{...}
      ```
 
 ---
