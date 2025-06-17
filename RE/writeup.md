@@ -34,3 +34,30 @@ This pointed toward an XOR-based obfuscation hiding the flag.
 2. **Interactive Behavior:**
    - Ran the program and explored the menu.
    - No obvious flag output or hidden options even after ordering every item.
+
+3. **Static and Memory Analysis with GDB:**
+   - Opened the binary in `gdb` and inspected `secret_sauce`:
+     ```bash
+     x/64bx 0x4030c0
+     ```
+     Recovered a 40-byte array followed by 8 bytes that resembled an XOR key:
+     ```python
+     encrypted_flag = [0xc8, 0x84, 0x85, 0x1d, ..., 0x00]
+     xor_key = [0x9b, 0xd2, 0xc7, 0x5a, 0x49, 0xc4, 0xef, 0xeb]
+     ```
+
+4. **Decryption with Python:**
+   - Recognized this as a repeating-key XOR cipher.
+   - Wrote a script to XOR each byte of the encrypted flag with the corresponding byte from the key (modulo key length):
+     ```python
+     def xor_decrypt(data, key):
+         return bytes([b ^ key[i % len(key)] for i, b in enumerate(data)])
+     ```
+
+5. **Recovered the Flag:**
+   - Successfully decrypted the flag:
+     ```
+     SVBGR{d3c0mp1l3rs_m4k3_l1f3_34sy}
+     ```
+
+---
